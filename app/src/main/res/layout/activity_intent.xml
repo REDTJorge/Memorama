@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imWinner"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/draw" />
+
+        <TextView
+            android:id="@+id/puntajeUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:paddingStart="140dp"
+            android:layout_below="@id/imWinner"
+            android:layout_alignParentStart="true"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/guion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:layout_below="@id/imWinner"
+            android:layout_centerHorizontal="true"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/puntajeDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="140dp"
+            android:textSize="48sp"
+            android:layout_below="@id/imWinner"
+            android:layout_alignParentEnd="true"
+            android:text="3" />
+
+        <!-- Agregar botón para iniciar nueva partida -->
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_below="@id/puntajeUno"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Agregar botón para realizar otra acción (si es necesario) -->
+        <Button
+            android:id="@+id/btnNuevaPartida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva partida"
+            android:layout_below="@id/puntajeDos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+</layout>
